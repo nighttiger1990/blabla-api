@@ -1,7 +1,11 @@
+import dotenv from 'dotenv'
 import jwtConfig from "./jsonwebtoken";
 
+dotenv.config()
+
 const app = {
-    port: 8080
+    port: process.env.PORT || 8000,
+    env: process.env.NODE_ENV || "development"
 }
 
 const rootConfig = {

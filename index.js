@@ -1,6 +1,6 @@
 import express from 'express'
 import AppRouter from './src/route';
-import JWT, {SignOptions} from 'jsonwebtoken'
+import JWT, { SignOptions } from 'jsonwebtoken'
 
 import fs from 'fs'
 import rootConfig from './src/config';
